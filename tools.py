@@ -97,6 +97,8 @@ def account_login(login_type: str, login_id=None, login_password=None):
     else:
         chromedriver = os.path.join(os.getcwd(), 'chromedriver_mac')
 
+    print(chromedriver)
+
     driver = webdriver.Chrome(chromedriver, options=option)
     driver.set_page_load_timeout(60)
     driver.get(login_url)
